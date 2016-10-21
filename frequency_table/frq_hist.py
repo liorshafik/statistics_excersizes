@@ -1,3 +1,9 @@
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = fig.add_subplot(111)
+
+
 
 f = open('Lotto.csv','r')
 
@@ -16,7 +22,11 @@ for i in range(60):
 #count and add to histogram:
 for x in b:
     hist[int(x)] += 1
-
+         
 print(hist)
+
+
+rects1 = ax.bar(range(60),hist,color='black')
+
 print('the end')
 
