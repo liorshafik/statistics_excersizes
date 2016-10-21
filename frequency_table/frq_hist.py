@@ -16,8 +16,6 @@ for i in range(60):
 #count and add to histogram:
 for x in b:
     hist[int(x)] += 1
- 
-      
 
 print(hist)
 print('the end')
